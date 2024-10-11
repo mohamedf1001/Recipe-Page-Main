@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+@font-face {
+    font-family: outfit;
+    src: url(/assets/fonts/outfit/static/Outfit-Regular.ttf) format("ttf");
+}
+
+:root {
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+
+ul {
+    display: block;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+h1,
+h2 {
+    font-family: youngserif;
+    color: var(--Brown-800);
+    letter-spacing: 0.05rem;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+div:not(:first-child),
+footer {
+    padding: 1.5rem;
+}
+
+ul,
+ol {
+    padding-left: 25px;
+    background-color: var(--Brown-800s);
+}
+
+li::marker {
+    color: var(--Brown-800);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li {
+    margin-top: 1rem;
+}
+
+p,
+li {
+    color: var(--Stone-600);
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: "Young Serif", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Stone-150);
+}
+
+header {
+    width: 900px;
+    background-color: white;
+    margin: 3rem auto 0;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+
+.main .imga img {
+    border-radius: 15px;
+}
+
+.main .text {
+    padding: 20px 0;
+}
+
+
+.main .text h2 {
+    margin-bottom: 10px;
+    font-size: 45px;
+    color: var(--Stone-900);
+}
+
+.main .text p {
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(0deg 0% 48.79%);
+}
+
+.list-1 {
+    background-color: var(--Rose-50);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+}
+
+.list-1 h2 {
+    color: var(--Rose-800);
+    margin-bottom: 1rem;
+}
+
+.unordr {
+    border-top: 1px solid hsl(30, 10%, 34%);
+    border-bottom: 1px solid hsl(30, 10%, 34%);
+}
+
+
+
+footer ul li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--Stone-150);
+
+}
+
+span {
+    color: var(--Brown-800);
+    font-weight: bold;
+}
+
+footer ul li:last-child {
+    border-bottom: none;
+}
+
+
+@media (max-width: 600px) {
+    header {
+        margin: 0;
+        padding: 1px;
+    }
+
+    .main .text {
+        padding: 0 20px;
+    }
+
+    .main .imga img {
+        border-radius: 0;
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+    header {
+        margin: 0;
+    }
+}
